@@ -19,14 +19,9 @@ var animals = [
     "penguin"
 ];
 
-var ingredients = [{"id":1,"text":"ham"},{"id":2,"text":"cheese"},{"id":3,"text":"potatoes"},{"id":4,"text":"honey"}];
 
 app.get('/animals', function(req, res) {
     res.send(animals);
-});
-
-app.get('/ingredients', function(req, res) {
-    res.send(ingredients);
 });
 
 app.listen(6060);
