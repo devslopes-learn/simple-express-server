@@ -38,6 +38,11 @@ app.get('/ingredients', function(req, res) {
     res.send(ingredients);
 });
 
+app.get("/", function (req, res) {
+    res.send("<h1>Hello World!</h1>")
+  })
+  
+
 app.post('/ingredients', function(req, res) {
     var ingredient = req.body;
     console.log(req.body);
